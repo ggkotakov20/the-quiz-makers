@@ -3,22 +3,26 @@
 
 using namespace std;
 
-void aboutUs()
+void aboutUs()//Option 2
 {
     cout << setw(55) << "About us" << endl;
     cout << "Georgi Kotakov -> ggkotakov20@codingburgas.bg -> Backend Developer and SCRUM Trainer" << endl;
     cout << "Stefan Chapkanov -> snchapkanov20@codingburgas.bg -> Front Developer and QA" << endl;
     cout << "Kaloyan Dimov -> khdimov20@codingburgas.bg -> Backend Developer" << endl << endl;
 }
-void startGame()
+void startGame()//Option 1
 {
+    system("cls");//Clear menu
     char firstAnswer, secondAnswer, thirdAnswer, fourAnswer, fifthAnswer;
     double score = 0;
     int question = 0;
 
     //Question 1
-    cout << endl << "Question 1" << endl;
-    cout << "a)a1  b)a2  c)a3  d)a4" << endl;
+    cout << "The symbol of prefixes used for kilo is :" << endl;
+    cout << "a)M" << endl;
+    cout << "b)C" << endl;
+    cout << "c)K" << endl;
+    cout << "d)d" << endl;
     question += 1;
 
     cin >> firstAnswer;
@@ -31,153 +35,125 @@ void startGame()
 
     switch (firstAnswer)
     {
-    case 'a':
-        cout << "Your answer is correct" << endl << endl;
-        score += 1;
-        break;
-    case 'b':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
     case 'c':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'd':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    default:
-        break;
-    }
+        score += 1;
 
-    //Question 2
-    cout << endl << "Question 2" << endl;
-    cout << "a)a1  b)a2  c)a3  d)a4" << endl;
-    question += 1;
+        //Question 2
+        cout << endl << "Which one of the following unit is not a derived unit?" << endl;
+        cout << "a)pascal" << endl;
+        cout << "b)Kilogramme" << endl;
+        cout << "c)Newton" << endl;
+        cout << "d)Watt" << endl;
+        question += 1;
 
-    cin >> secondAnswer;
-
-    while (!(secondAnswer == 'a' || secondAnswer == 'b' || secondAnswer == 'c' || secondAnswer == 'd'))
-    {
-        cout << "Incorrect input. Please try again!" << endl;
         cin >> secondAnswer;
-    }
 
-    switch (secondAnswer)
-    {
-    case 'a':
-        cout << "Your answer is correct" << endl << endl;
-        score += 1;
-        break;
-    case 'b':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'c':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'd':
-        cout << "Your answer is incorrect" << endl << endl;
+        while (!(secondAnswer == 'a' || secondAnswer == 'b' || secondAnswer == 'c' || secondAnswer == 'd'))
+        {
+            cout << "Incorrect input. Please try again!" << endl;
+            cin >> secondAnswer;
+        }
+
+        switch (secondAnswer)
+        {
+        case 'b':
+            score += 1;
+
+            //Question 3
+            cout << endl << "The instrument used to measure the depth is :" << endl;
+            cout << "a)Meter rule" << endl;
+            cout << "b)Vernier Callipers" << endl;
+            cout << "c)Screw guage" << endl;
+            cout << "d)Sold Cylinder" << endl;
+            question += 1;
+
+            cin >> thirdAnswer;
+
+            while (!(thirdAnswer == 'a' || thirdAnswer == 'b' || thirdAnswer == 'c' || thirdAnswer == 'd'))
+            {
+                cout << "Incorrect input. Please try again!" << endl;
+                cin >> thirdAnswer;
+            }
+
+            switch (thirdAnswer)
+            {
+            case 'b':
+                score += 1;
+
+                //Question 4
+                cout << endl << "The SI unit of mass it" << endl;
+                cout << "a)Gram" << endl;
+                cout << "b)Milligram" << endl;
+                cout << "c)Kilogram" << endl;
+                cout << "d)Centigram" << endl;
+                question += 1;
+
+                cin >> fourAnswer;
+
+                while (!(fourAnswer == 'a' || fourAnswer == 'b' || fourAnswer == 'c' || fourAnswer == 'd'))
+                {
+                    cout << "Incorrect input. Please try again!" << endl;
+                    cin >> fourAnswer;
+                }
+
+                switch (fourAnswer)
+                {
+                case 'c':
+                    score += 1;
+
+                    //Question 5
+                    cout << endl << "There are ......... base quantities." << endl;
+                    cout << "a)4" << endl;
+                    cout << "b)6" << endl;
+                    cout << "c)8" << endl;
+                    cout << "d)7" << endl;
+                    question += 1;
+
+                    cin >> fifthAnswer;
+
+                    while (!(fifthAnswer == 'a' || fifthAnswer == 'b' || fifthAnswer == 'c' || fifthAnswer == 'd'))
+                    {
+                        cout << "Incorrect input. Please try again!" << endl;
+                        cin >> fifthAnswer;
+                    }
+
+                    switch (fifthAnswer)
+                    {
+                    case 'd':
+                        score += 1;
+                        break;
+                    default:
+                        break;
+                    }
+
+                    break;
+                default:
+                    break;
+                }
+
+                break;
+            default:
+                break;
+            }
+
+            break;
+        default:
+            break;
+        }
+
         break;
     default:
         break;
     }
 
-    //Question 3
-    cout << endl << "Question 3" << endl;
-    cout << "a)a1  b)a2  c)a3  d)a4" << endl;
-    question += 1;
 
-    cin >> thirdAnswer;
 
-    while (!(thirdAnswer == 'a' || thirdAnswer == 'b' || thirdAnswer == 'c' || thirdAnswer == 'd'))
-    {
-        cout << "Incorrect input. Please try again!" << endl;
-        cin >> thirdAnswer;
-    }
 
-    switch (thirdAnswer)
-    {
-    case 'a':
-        cout << "Your answer is correct" << endl << endl;
-        score += 1;
-        break;
-    case 'b':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'c':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'd':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    default:
-        break;
-    }
 
-    //Question 4
-    cout << endl << "Question 4" << endl;
-    cout << "a)a1  b)a2  c)a3  d)a4" << endl;
-    question += 1;
-
-    cin >> fourAnswer;
-
-    while (!(fourAnswer == 'a' || fourAnswer == 'b' || fourAnswer == 'c' || fourAnswer == 'd'))
-    {
-        cout << "Incorrect input. Please try again!" << endl;
-        cin >> fourAnswer;
-    }
-
-    switch (fourAnswer)
-    {
-    case 'a':
-        cout << "Your answer is correct" << endl << endl;
-        score += 1;
-        break;
-    case 'b':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'c':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'd':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    default:
-        break;
-    }
-
-    //Question 5
-    cout << endl << "Question 5" << endl;
-    cout << "a)a1  b)a2  c)a3  d)a4" << endl;
-    question += 1;
-
-    cin >> fifthAnswer;
-
-    while (!(fifthAnswer == 'a' || fifthAnswer == 'b' || fifthAnswer == 'c' || fifthAnswer == 'd'))
-    {
-        cout << "Incorrect input. Please try again!" << endl;
-        cin >> fifthAnswer;
-    }
-
-    switch (fifthAnswer)
-    {
-    case 'a':
-        cout << "Your answer is correct" << endl << endl;
-        score += 1;
-        break;
-    case 'b':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'c':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    case 'd':
-        cout << "Your answer is incorrect" << endl << endl;
-        break;
-    default:
-        break;
-    }
-
-    cout << "Your score is " << (score / question) * 100 << "%" << endl;
+    cout << endl << "Your score is " << (score / question) * 100 << "%" << endl;
     cout << "GAME OVER" << endl << endl;
+    system("pause");//Pause game
+    system("cls");//Clear game
 }
 void mainList()
 {
@@ -208,7 +184,7 @@ void mainList()
 
         switch (quitChoice)
         {
-        case '1':
+        case '1'://Exit game
             exit(0);
             break;
         case '2':
