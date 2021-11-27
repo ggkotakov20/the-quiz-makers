@@ -171,7 +171,7 @@ void mainList()
 
         cout << "Are you sure you want to exit the program ? " << endl << endl;
         cout << "Option 1 -> Yes" << endl;
-        cout << "Optin 2 -> No" << endl;
+        cout << "Optiоn 2 -> No" << endl;
 
         cin >> quitChoice;
 
