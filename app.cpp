@@ -15,7 +15,6 @@ void startGame()//Option 1
     system("cls");//Clear menu
     char firstAnswer, secondAnswer, thirdAnswer, fourAnswer, fifthAnswer;
     double score = 0;
-    int question = 0;
 
     //Question 1
     cout << "The symbol of prefixes used for kilo is :" << endl;
@@ -23,7 +22,6 @@ void startGame()//Option 1
     cout << "b)C" << endl;
     cout << "c)K" << endl;
     cout << "d)d" << endl;
-    question += 1;
 
     cin >> firstAnswer;
 
@@ -44,7 +42,6 @@ void startGame()//Option 1
         cout << "b)Kilogramme" << endl;
         cout << "c)Newton" << endl;
         cout << "d)Watt" << endl;
-        question += 1;
 
         cin >> secondAnswer;
 
@@ -65,7 +62,6 @@ void startGame()//Option 1
             cout << "b)Vernier Callipers" << endl;
             cout << "c)Screw guage" << endl;
             cout << "d)Sold Cylinder" << endl;
-            question += 1;
 
             cin >> thirdAnswer;
 
@@ -86,7 +82,6 @@ void startGame()//Option 1
                 cout << "b)Milligram" << endl;
                 cout << "c)Kilogram" << endl;
                 cout << "d)Centigram" << endl;
-                question += 1;
 
                 cin >> fourAnswer;
 
@@ -107,7 +102,6 @@ void startGame()//Option 1
                     cout << "b)6" << endl;
                     cout << "c)8" << endl;
                     cout << "d)7" << endl;
-                    question += 1;
 
                     cin >> fifthAnswer;
 
@@ -150,7 +144,7 @@ void startGame()//Option 1
 
 
 
-    cout << endl << "Your score is " << (score / question) * 100 << "%" << endl;
+    cout << endl << "Your score is " << (score / 5) * 100 << "%" << endl;
     cout << "GAME OVER" << endl << endl;
     system("pause");//Pause game
     system("cls");//Clear game
