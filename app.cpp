@@ -144,7 +144,12 @@ void startGame()//Option 1
 
 
     cout << endl << "Your score is " << (score / question) * 100 << "%" << endl;
-    cout << "GAME OVER" << endl << endl;
+    cout << "   _____              __  __   ______      ____   __      __  ______   _____   " << endl;
+    cout << "  / ____|     /\\     |  \\/  | |  ____|    / __ \\  \\ \\    / / |  ____| |  __ \\  " << endl;
+    cout << " | |  __     /  \\    | \\  / | | |__      | |  | |  \\ \\  / /  | |__    | |__) | " << endl;
+    cout << " | | |_ |   / /\\ \\   | |\\/| | |  __|     | |  | |   \\ \\/ /   |  __|   |  _  /  " << endl;
+    cout << " | |__| |  / ____ \\  | |  | | | |____    | |__| |    \\  /    | |____  | | \\ \\  " << endl;
+    cout << "  \\_____| /_/    \\_\\ |_|  |_| |______|    \\____/      \\/     |______| |_|  \\_\\ " << endl << endl;
     system("pause");//Pause game
     system("cls");//Clear game
 }
