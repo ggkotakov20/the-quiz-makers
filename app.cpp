@@ -7,7 +7,7 @@ void aboutUs()//Option 2
 {
     cout << setw(55) << "About us" << endl;
     cout << "Georgi Kotakov -> ggkotakov20@codingburgas.bg -> Backend Developer and SCRUM Trainer" << endl;
-    cout << "Stefan Chapkanov -> snchapkanov20@codingburgas.bg -> Front Developer and QA" << endl;
+    cout << "Stefan Chapkanov -> snchapkanov20@codingburgas.bg -> QA" << endl;
     cout << "Kaloyan Dimov -> khdimov20@codingburgas.bg -> Backend Developer" << endl << endl;
 }
 void startGame()//Option 1
